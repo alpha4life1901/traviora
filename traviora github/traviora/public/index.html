@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Traviora | Discover India beyond the usual</title>
+<meta name="description" content="Traviora is a trip planner for India. Enter a destination, your budget, days and interests, and get two day-by-day itineraries: one around lesser-known places, one around well-known sights.">
+<meta name="theme-color" content="#FFF6E8">
+<link rel="preload" href="fonts/bricolage-grotesque-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="chat.css">
+</head>
+<body>
+<a class="skip-link" href="#tripForm">Skip to the trip planner</a>
+
+<header class="site-header" id="top">
+  <nav class="wrap nav" aria-label="Main">
+    <a class="brand" href="/">
+      <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true" focusable="false">
+        <rect width="32" height="32" rx="9" fill="#2443D6"/>
+        <path d="M8.5 23.5c2.5-5.5 8.5-2 11-7.5 1.6-3.4 1.4-5.6 3.6-7.2" fill="none" stroke="#CCF54A" stroke-width="2.4" stroke-linecap="round" stroke-dasharray="0.1 4.4"/>
+        <circle cx="8.5" cy="23.5" r="2.4" fill="#FFF6E8"/>
+        <circle cx="23.5" cy="8.5" r="3.4" fill="#CCF54A"/>
+      </svg>
+      <span class="brand-name">Traviora</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#how-it-works">How it works</a></li>
+      <li><a href="#planner">Trip planner</a></li>
+    </ul>
+    <a class="btn btn--cobalt btn--small nav-cta" href="#tripForm" data-plan-cta>Plan my trip</a>
+  </nav>
+</header>
+
+<main id="main">
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <p class="hero-kicker"><span class="tag tag--lime">Trip planner</span> <span>Made for India</span></p>
+        <h1 class="hero-title" id="hero-title">Discover India beyond the <span class="hl">usual.</span></h1>
+      </div>
+      <div class="hero-side">
+        <p class="hero-lede">Tell Traviora where you're headed, what you can spend and how many days you've got. You get two day-by-day plans for the same trip: one for hidden gems, one for the icons.</p>
+        <div class="hero-actions">
+          <a class="btn btn--cobalt" href="#tripForm" data-plan-cta>Plan my trip <span data-icon="arrow-down"></span></a>
+          <a class="text-link" href="#how-it-works">How it works</a>
+        </div>
+        <ul class="hero-facts">
+          <li><span data-icon="check"></span>No sign-up</li>
+          <li><span data-icon="check"></span>Budget in rupees</li>
+          <li><span data-icon="check"></span>Two plans per trip</li>
+        </ul>
+      </div>
+      <div class="hero-rail">
+        <figure class="photo photo--arch rail-1">
+          <img src="images/key-monastery-spiti-600.webp" srcset="images/key-monastery-spiti-600.webp 600w, images/key-monastery-spiti-1000.webp 1000w" sizes="(min-width: 1024px) 300px, 46vw" width="600" height="750" fetchpriority="high" alt="Whitewashed monastery buildings stacked on a snowy hill, with mountains behind">
+          <figcaption><span class="photo-index">01</span> Key Monastery, Spiti Valley</figcaption>
+        </figure>
+        <figure class="photo rail-2">
+          <img src="images/ziro-valley-arunachal-480.webp" srcset="images/ziro-valley-arunachal-480.webp 480w, images/ziro-valley-arunachal-960.webp 960w" sizes="(min-width: 1024px) 470px, 46vw" width="480" height="300" alt="A person walking along a narrow path between bright green rice fields">
+          <figcaption><span class="photo-index">02</span> Ziro Valley, Arunachal Pradesh</figcaption>
+        </figure>
+        <figure class="photo rail-3">
+          <img src="images/gandikota-gorge-andhra-400.webp" srcset="images/gandikota-gorge-andhra-400.webp 400w, images/gandikota-gorge-andhra-720.webp 720w" sizes="(min-width: 1024px) 290px, 46vw" width="400" height="300" alt="The Pennar river winding through a deep gorge of red rock">
+          <figcaption><span class="photo-index">03</span> Gandikota gorge, Andhra Pradesh</figcaption>
+        </figure>
+        <p class="sticker">Hidden gems <span class="sticker-plus">+</span> the icons</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="how on-dark" id="how-it-works" aria-labelledby="how-title">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow"><span class="eyebrow-num">01</span> How it works</p>
+        <h2 class="section-title" id="how-title">Three questions in. <span class="title-accent">Two plans out.</span></h2>
+      </div>
+      <ol class="route">
+        <li class="route-stop">
+          <span class="route-dot" aria-hidden="true">1</span>
+          <h3 class="route-title">Where and how long</h3>
+          <p>A city or region in India, plus your number of days.</p>
+        </li>
+        <li class="route-stop">
+          <span class="route-dot" aria-hidden="true">2</span>
+          <h3 class="route-title">Budget and crew</h3>
+          <p>Your total budget in rupees and how many of you are going.</p>
+        </li>
+        <li class="route-stop">
+          <span class="route-dot" aria-hidden="true">3</span>
+          <h3 class="route-title">Your kind of trip</h3>
+          <p>Nature, History, Food or Adventure. Pick any, or none.</p>
+        </li>
+        <li class="route-stop route-stop--end">
+          <span class="route-dot" aria-hidden="true"><span data-icon="map-pin"></span></span>
+          <h3 class="route-title">Two plans, side by side</h3>
+          <p class="route-tags"><span class="mini-tag mini-tag--hidden">Hidden Gems</span> <span class="mini-tag mini-tag--iconic">Iconic India</span></p>
+          <p>Both planned day by day. It can take up to a minute.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="perks" aria-labelledby="perks-title">
+    <div class="wrap perks-grid">
+      <figure class="photo photo--mounted perks-photo">
+        <img src="images/chand-baori-abhaneri-480.webp" srcset="images/chand-baori-abhaneri-480.webp 480w, images/chand-baori-abhaneri-800.webp 800w" sizes="(min-width: 900px) 400px, 80vw" width="480" height="600" loading="lazy" alt="Rows of criss-crossing stone steps descending inside a stepwell">
+        <figcaption><span class="photo-index">04</span> Chand Baori stepwell, Abhaneri, Rajasthan</figcaption>
+      </figure>
+      <div class="perks-body">
+        <p class="eyebrow"><span class="eyebrow-num">02</span> What you get</p>
+        <h2 class="section-title" id="perks-title">Less tab-hopping. More going.</h2>
+        <ol class="perks-list">
+          <li class="perk">
+            <span class="perk-num" aria-hidden="true">01</span>
+            <div>
+              <h3 class="perk-title">Day by day, stop by stop</h3>
+              <p>Each day lists places to see, the time they need and a rough cost.</p>
+            </div>
+          </li>
+          <li class="perk">
+            <span class="perk-num" aria-hidden="true">02</span>
+            <div>
+              <h3 class="perk-title">Hidden gems, on purpose</h3>
+              <p>One plan skips the obvious for lesser-known places that fit your interests.</p>
+            </div>
+          </li>
+          <li class="perk">
+            <span class="perk-num" aria-hidden="true">03</span>
+            <div>
+              <h3 class="perk-title">Built around your budget</h3>
+              <p>Your total in rupees, your days and your group size shape the plan. Costs are AI estimates, not quotes.</p>
+            </div>
+          </li>
+          <li class="perk">
+            <span class="perk-num" aria-hidden="true">04</span>
+            <div>
+              <h3 class="perk-title">Know a place before you go</h3>
+              <p>A map search link for every stop, plus a Wikipedia photo and Underrated Score when a matching article is found.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <section class="planner" id="planner" aria-labelledby="planner-title">
+    <div class="wrap planner-grid">
+      <div class="planner-intro">
+        <p class="eyebrow"><span class="eyebrow-num">03</span> The planner</p>
+        <h2 class="section-title" id="planner-title">Plan a trip in India, two ways</h2>
+        <p class="planner-lede">Same destination, two different trips. Compare them side by side, then mix and match.</p>
+        <div class="postcards">
+          <figure class="postcard postcard--hidden">
+            <img src="images/living-root-bridge-meghalaya-480.webp" srcset="images/living-root-bridge-meghalaya-480.webp 480w, images/living-root-bridge-meghalaya-800.webp 800w" sizes="(min-width: 900px) 220px, 42vw" width="480" height="600" loading="lazy" alt="A stone path crossing a bridge of tangled tree roots in a forest">
+            <figcaption>
+              <span class="postcard-label"><span data-icon="binoculars"></span>Hidden Gems</span>
+              <span class="postcard-text">Lesser-known places that match your interests.</span>
+              <span class="postcard-place"><span class="photo-index">05</span> Living root bridge, Meghalaya</span>
+            </figcaption>
+          </figure>
+          <figure class="postcard postcard--iconic">
+            <img src="images/hawa-mahal-jaipur-480.webp" srcset="images/hawa-mahal-jaipur-480.webp 480w, images/hawa-mahal-jaipur-800.webp 800w" sizes="(min-width: 900px) 220px, 42vw" width="480" height="600" loading="lazy" alt="The pink, many-windowed facade of a palace rising behind a courtyard">
+            <figcaption>
+              <span class="postcard-label"><span data-icon="landmark"></span>Iconic India</span>
+              <span class="postcard-text">The well-known sights, planned day by day.</span>
+              <span class="postcard-place"><span class="photo-index">06</span> Hawa Mahal, Jaipur</span>
+            </figcaption>
+          </figure>
+        </div>
+        <p class="planner-note"><span data-icon="map"></span><span>Each place links to a map search, and to Wikipedia when a matching article is found.</span></p>
+      </div>
+
+      <form class="ticket" id="tripForm" novalidate aria-labelledby="form-title">
+        <div class="ticket-head">
+          <p class="ticket-kicker">Trip pass</p>
+          <h2 class="card-title" id="form-title" tabindex="-1">Your trip</h2>
+          <p class="ticket-sub">Four quick details. Interests are optional.</p>
+        </div>
+
+        <div class="ticket-body">
+          <div class="form-summary" id="formSummary" tabindex="-1" hidden></div>
+
+          <div class="field">
+            <label for="city">Destination</label>
+            <p class="hint" id="city-hint">A city or region in India, for example Jaipur or Coorg.</p>
+            <div class="input-wrap">
+              <span class="input-icon" data-icon="map-pin"></span>
+              <input id="city" name="city" type="text" autocomplete="off" maxlength="80" required aria-describedby="city-hint city-error">
+            </div>
+            <p class="field-error" id="city-error" hidden></p>
+          </div>
+
+          <div class="field-row">
+            <div class="field">
+              <label for="budget">Total budget (₹)</label>
+              <p class="hint" id="budget-hint">For everyone, whole trip.</p>
+              <div class="input-wrap">
+                <span class="input-icon" data-icon="indian-rupee"></span>
+                <input id="budget" name="budget" type="number" inputmode="decimal" min="1" step="any" required aria-describedby="budget-hint budget-error">
+              </div>
+              <p class="field-error" id="budget-error" hidden></p>
+            </div>
+            <div class="field">
+              <label for="days">Number of days</label>
+              <p class="hint" id="days-hint">Whole days, for example 3.</p>
+              <div class="input-wrap">
+                <span class="input-icon" data-icon="calendar-days"></span>
+                <input id="days" name="days" type="number" inputmode="numeric" min="1" step="1" required aria-describedby="days-hint days-error">
+              </div>
+              <p class="field-error" id="days-error" hidden></p>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="travelers">Travelers</label>
+            <p class="hint" id="travelers-hint">Leave as 1 if you are traveling alone.</p>
+            <div class="input-wrap input-wrap--short">
+              <span class="input-icon" data-icon="users"></span>
+              <input id="travelers" name="travelers" type="number" inputmode="numeric" min="1" step="1" value="1" aria-describedby="travelers-hint travelers-error">
+            </div>
+            <p class="field-error" id="travelers-error" hidden></p>
+          </div>
+
+          <fieldset class="field interests" id="interests">
+            <legend>Interests <span class="optional">(optional)</span></legend>
+            <div class="chips">
+              <label class="chip chip--nature"><input type="checkbox" name="interests" value="Nature"><span class="chip-face"><span class="chip-check" data-icon="check"></span><span class="chip-icon" data-icon="leaf"></span><span>Nature</span></span></label>
+              <label class="chip chip--history"><input type="checkbox" name="interests" value="History"><span class="chip-face"><span class="chip-check" data-icon="check"></span><span class="chip-icon" data-icon="scroll-text"></span><span>History</span></span></label>
+              <label class="chip chip--food"><input type="checkbox" name="interests" value="Food"><span class="chip-face"><span class="chip-check" data-icon="check"></span><span class="chip-icon" data-icon="utensils"></span><span>Food</span></span></label>
+              <label class="chip chip--adventure"><input type="checkbox" name="interests" value="Adventure"><span class="chip-face"><span class="chip-check" data-icon="check"></span><span class="chip-icon" data-icon="mountain"></span><span>Adventure</span></span></label>
+            </div>
+          </fieldset>
+
+          <button class="btn-primary" type="submit" id="generateBtn">Plan my trip</button>
+
+          <div class="status" id="status">
+            <span class="spinner" aria-hidden="true"></span>
+            <p id="statusText" role="status" aria-live="polite"></p>
+          </div>
+
+          <p class="form-note">Itineraries are drafted by AI and can contain mistakes. Check opening hours, prices and travel times before you go.</p>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <section class="results" id="result" aria-labelledby="results-title" hidden></section>
+</main>
+
+<footer class="site-footer on-dark">
+  <div class="wrap footer-grid">
+    <div class="footer-brand">
+      <p class="footer-name">Traviora</p>
+      <p class="footer-line">Trip plans for India, drafted by AI. Check opening hours, prices and travel times before you go.</p>
+    </div>
+    <nav class="footer-nav" aria-label="Footer">
+      <ul>
+        <li><a href="#how-it-works">How it works</a></li>
+        <li><a href="#planner">Trip planner</a></li>
+        <li><a href="#top"><span data-icon="arrow-up"></span>Back to top</a></li>
+      </ul>
+    </nav>
+    <p class="footer-fine">Itineraries are AI-generated drafts, not bookings or recommendations from local experts. Place photos and page-view figures come from Wikipedia and Wikimedia when a matching article is found.</p>
+    <div class="credits">
+      <h2 class="credits-title">Photo credits</h2>
+      <p>Photos on this page come from Wikimedia Commons and were cropped and resized for this site.</p>
+      <ol class="credits-list">
+        <li><span class="photo-index">01</span> <a href="https://commons.wikimedia.org/wiki/File:Kee_monastery_Spiti_Valley_(edited).jpg">Key Monastery, Spiti Valley</a> by Kulbhushan Singh Suryawanshi, edited by Aristeas, <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a></li>
+        <li><span class="photo-index">02</span> <a href="https://commons.wikimedia.org/wiki/File:Ziro_and_its_green_valley.jpg">Ziro and its green valley</a> by Arunachal2007, <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a></li>
+        <li><span class="photo-index">03</span> <a href="https://commons.wikimedia.org/wiki/File:Gandikota_Hills_-Grand_Canyon_of_India.jpg">Gandikota Hills</a> by Akanksha1811, <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a></li>
+        <li><span class="photo-index">04</span> <a href="https://commons.wikimedia.org/wiki/File:Chand_Baori_02.jpg">Chand Baori</a> by Vetra, <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a></li>
+        <li><span class="photo-index">05</span> <a href="https://commons.wikimedia.org/wiki/File:Living_root_bridge,_Maghalaya,_India4.jpg">Living root bridge, Meghalaya</a> by Joydeep Chakraborty, <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a></li>
+        <li><span class="photo-index">06</span> <a href="https://commons.wikimedia.org/wiki/File:20191218_Hawa_Mahal_(The_Palace_of_Winds)_in_Jaipur,_1150_9148.jpg">Hawa Mahal, Jaipur</a> by Jakub Hałun, <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a></li>
+      </ol>
+    </div>
+  </div>
+</footer>
+
+<script type="module" src="app.js"></script>
+<script type="module" src="landing.js"></script>
+<script type="module" src="chat.js"></script>
+</body>
+</html>
